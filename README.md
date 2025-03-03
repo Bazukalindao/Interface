@@ -37,7 +37,7 @@ WelcomeText:Destroy()
 
 -- Configuração do Texto de Escolha de Versão
 VersionText.Parent = Frame
-VersionText.Text = "Qual versão deseja usar?"
+VersionText.Text = "qual versão deseja usar?"
 VersionText.Size = UDim2.new(1, 0, 0.3, 0)
 VersionText.Position = UDim2.new(0, 0, 0.1, 0)
 VersionText.TextColor3 = Color3.fromRGB(255, 255, 255) -- Letras Brancas
@@ -45,9 +45,9 @@ VersionText.BackgroundTransparency = 1
 VersionText.Font = Enum.Font.GothamBlack
 VersionText.TextScaled = true
 
--- Configuração do Botão Português 🇧🇷
+-- Configuração do Botão Esp Avançado
 PortugueseButton.Parent = Frame
-PortugueseButton.Text = "🇧🇷 Português"
+PortugueseButton.Text = "Esp Avançado"
 PortugueseButton.Size = UDim2.new(0.45, 0, 0.3, 0)
 PortugueseButton.Position = UDim2.new(0.05, 0, 0.6, 0)
 PortugueseButton.BackgroundColor3 = Color3.fromRGB(0, 150, 0)
@@ -56,9 +56,9 @@ PortugueseButton.Font = Enum.Font.GothamBold
 PortugueseButton.TextScaled = true
 PortugueseButton.BorderSizePixel = 2
 
--- Configuração do BotãoPortuguês 2 🇧🇷
+-- Configuração do Botão Esp Básico
 EnglishButton.Parent = Frame
-EnglishButton.Text = "🇧🇷 Português 2"
+EnglishButton.Text = "Esp Básico"
 EnglishButton.Size = UDim2.new(0.45, 0, 0.3, 0)
 EnglishButton.Position = UDim2.new(0.5, 0, 0.6, 0)
 EnglishButton.BackgroundColor3 = Color3.fromRGB(0, 0, 200)
@@ -76,7 +76,7 @@ SelectionText.Font = Enum.Font.GothamBlack
 SelectionText.TextScaled = true
 SelectionText.Visible = false -- Inicialmente escondido
 
--- remover a interface e carregar o script em Português XD
+-- remover a interface e carregar o script em Português
 PortugueseButton.MouseButton1Click:Connect(function()
 VersionText.Visible = false
 PortugueseButton.Visible = false
@@ -92,7 +92,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Bazukalindao/esp/refs
 
 end)
 
--- remover a interface e carregar o script em Inglês XD
+-- remover a interface e carregar o script em português
 EnglishButton.MouseButton1Click:Connect(function()
 VersionText.Visible = false
 PortugueseButton.Visible = false
@@ -105,4 +105,4 @@ task.wait(1.5)
 ScreenGui:Destroy()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Bazukalindao/espRGB/refs/heads/main/README.md"))()
 
-end)
+end
